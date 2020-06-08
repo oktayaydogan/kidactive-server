@@ -1,0 +1,34 @@
+<%- include("_header") -%>
+
+<h3 class='mb-4'>Articles (<%= model.length %>)</h3>
+
+<div class="table-responsive-sm">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Tags</th>
+        <th class="d-print-none text-right">
+          <a class="btn btn-sm btn-success" href="/create">New Article</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const article of model) { %>
+        <tr>
+          <td><%= article.Title %></td>
+          <td><%= article.Author %></td>
+          <td><%= article.Tags %></td>
+          <td class="d-print-none text-right">
+            <a class="btn btn-sm btn-info" href="/image/<%= article.ID %>">Image</a>
+            <a class="btn btn-sm btn-warning" href="/edit/<%= article.ID %>">Edit</a>
+            <a class="btn btn-sm btn-danger" href="/delete/<%= article.ID %>">Delete</a>
+          </td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+
+<%- include("_footer") -%>

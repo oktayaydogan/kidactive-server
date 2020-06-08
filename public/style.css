@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background: #160f19;
+}
+
+.logo {
+  height: 23px;
+  vertical-align: sub;
+  margin-right: 10px;
+}
+
+.form-control {
+  background-color: #2a1135;
+  border: 1px solid #131212;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: #2a1135;
+  border-color: #131212;
+  color: white;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.11);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.11);
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #1f1025;
+  opacity: 1;
+  color: #a0a0a0;
+  height: auto;
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+  border-color: #131212;
+  background: #2a1135;
+}
+
+.ql-toolbar.ql-snow .ql-picker-label,
+.ql-snow .ql-stroke {
+  color: white;
+  stroke: white;
+}
+
+.navbar {
+  background-color: #2a1135 !important;
+}
+
+.custom-file-label {
+  background: #2a1135;
+  border: 1px solid #131212;
+  color: white;
+}
+
+.custom-file-label::after {
+  background: #F39C12;
+  color: white;
+}
+
+.custom-file-input:focus ~ .custom-file-label {
+  border: none;
+}
