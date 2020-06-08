@@ -1,1 +1,0 @@
-# kidactive server management
